@@ -1,0 +1,19 @@
+
+public class Heartbeat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double time = 0;
+		while(true) {
+			try {
+				Thread.sleep(1000);
+				time += 1;
+				System.out.println(time + " sec have elapsed");
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+
+}
